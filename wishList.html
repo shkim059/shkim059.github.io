@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WishList</title>
+    <link rel="stylesheet" type="text/css" href="css/whishiList.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+        * {
+            font-family: 'Nanum Brush Script', cursive;
+        }
+
+        .bg {
+            width: 360px;
+            background-image: url("img/bg-grid.png");
+        }
+
+        .bucket {
+            width: 160px;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img1 {
+            background-image: url("img/bucket-red.png");
+        }
+
+        .img2 {
+            background-image: url("img/bucket-lightred.png");
+        }
+
+        .title {
+            color: white;
+            background-color: tomato;
+            font-size: 24px;
+            padding: 4px 14px;
+            border-radius: 8px;
+            font-weight: 600;
+        }
+
+        .msg {
+            margin: -5px 0px 15px;
+        }
+    </style>
+
+</head>
+<body class="bg-t3 center">
+    <h1 class="title-t3">WishList</h1>
+    <p class="msg">일단 해보자</p>
+    <div class="flex-row wrap">
+        <div class="bucket img1-t3 center">WishList 만들기</div>
+        <div class="bucket img2-t3 center">프로필 만들기</div>
+        <div class="bucket img2-t3 center">게시판 만들기</div>
+        <div class="bucket img1-t3 center">홈페이지 만들기</div>
+        <div class="bucket img1-t3 center done">TodoList 만들기</div>
+        <div class="bucket img2-t3 center">쇼핑몰 만들기</div>
+    </div>
+</body>
+</html>
