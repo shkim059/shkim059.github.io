@@ -73,10 +73,23 @@
         }
     </style>
 
+    <script>
+        function hey() {
+            let a_dict = []
+            let a = [
+                {'name' : '명수', 'age' :  27},
+                {'name' : '철수', 'age' :  15},
+                {'name' : '영희', 'age' :  20}
+        ]
+            console.log(a[0]['name'])
+            console.log(a[1]['age'])
+        }
+    </script>
+
 </head>
 <body>
     <div class="wrap">
-        <div class="profile"></div>
+        <div class="profile" onclick="hey()"></div>
         <h1 class="main">승희</h1>
         <p class="sub">인공지능 좋아하냐?</p>
         <a href="https://www.naver.com/" target="_blank">ChatGPT</a> 
