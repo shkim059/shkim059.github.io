@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인생네컷</title>
+
+    <style>
+    @font-face {
+        font-family: 'TheJamsil5Bold';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+        font-weight: 700;
+        font-style: normal;
+}
+
+    body {
+        font-family: "TheJamsil5Bold";
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        background-image: url("img/four/four_background.png");
+    }
+
+    .container {
+        width: 390px;
+        background-color: #ff9d73;
+        height: 100%;
+    }
+
+    .photos {
+        margin-top: 30px;
+    }
+
+    .photo-frame {
+        background-color: white;
+        margin: 15px 20px;
+        height: 200px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .f-title {
+        font-size: 25px;
+        font-weight: 900;
+        color: white;
+    }
+
+    .f-date {
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+    }
+
+    #image1 {
+        background-image: url("img/four/pi1.jfif");
+        
+    }
+    
+    #image2 {
+        background-image: url("img/four/pi2.jfif");
+    }
+
+    #image3 {
+        background-image: url("img/four/pi3.jfif");
+    }
+
+    #image4 {
+        background-image: url("img/four/pi4.jfif");
+    }
+
+    .photo_description {
+        color: white;
+        background-color: black;
+        width: fit-content;
+        padding: 0 20px;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 0;
+        transform: translate(-50%);
+        left: 50%;
+    }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="photos">
+            <div class="photo-frame" id="image1" onmouseover="showText(1)" onmouseout="hideText(1)" onclick="alertText(1)"><span class="photo_description" id="desc1">고양이1</span></div>
+            <div class="photo-frame" id="image2" onmouseover="showText(2)" onmouseout="hideText(2)" onclick="alertText(2)"><span class="photo_description" id="desc2">고양이2</span></div>
+            <div class="photo-frame" id="image3" onmouseover="showText(3)" onmouseout="hideText(3)" onclick="alertText(3)"><span class="photo_description" id="desc3">고양이3</span></div>
+            <div class="photo-frame" id="image4" onmouseover="showText(4)" onmouseout="hideText(4)" onclick="alertText(4)"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/HNKQE8Xmkkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+        </div>
+        <div class="footer">
+            <p class="f-title">고양이</p>
+            <p class="f-date">2023.02.13-17</p>
+        </div>
+    </div>
+</body>
+</html>
